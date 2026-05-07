@@ -121,6 +121,10 @@ public class PracticeProgramICMain {
         System.out.println("Average: " + PracticeProgram.signature(10, 20, 30, 40));
 
         //generate the squares of numbers 0 to 5 and print them
+        int[] squares = PracticeProgram.generateSquares(5);
+        // needs [] around the numbers and using tostring
+        System.out.println("Squares: " + java.util.Arrays.toString(squares));
+
         String[] words = {"java", "advanced", "program"};
         //complete the call
         ArrayList<String> upperWords = PracticeProgram.convertToUpper(words);
@@ -131,11 +135,11 @@ public class PracticeProgramICMain {
         PracticeProgram demo = new PracticeProgram();
 
         //call displayMessage with 'Welcome to the course'
-        System.out.println("Welcome to the course");
+        System.out.println("Message: Welcome to the course");
         //concatenate Hello and World and print Hello World 
         String word1 = "Hello";
-        String word2 = " World";
-        System.out.println(demo.concatenate(word1,word2));
+        String word2 = "World";
+        System.out.println(demo.concatenate("Concatenate: " +" ", word1 + " " + word2));
         int[] nums = {3, 7, 2, 9, 5};
 
         //print the maximum of the numbers in nums

@@ -1,4 +1,4 @@
-package Wk1;
+package wk1;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -6,10 +6,10 @@ import java.util.Arrays;
 class PracticeProgram {
 
     // this variable should be static
-     int staticCounter = 0;
+    int staticCounter = 0;
 
     // instance variable of type int
-    instanceCounter = 0;
+    int instanceCounter  = 0;
 
     // code a Constructor that increments both the above variables
     public PracticeProgram() {
@@ -20,16 +20,18 @@ class PracticeProgram {
     }
 
     // ---------------- STATIC METHODS ----------------
-
     // this method returns the sum of its two parameters
     public static int add(int a, int b) {
-        
+        return a + b;
     }
 
     // complete the method signature of this Static method average
     // with varargs (variable parameters) of type double and returns a double
+    public static double signature(double... numbers) // completed the method signature?
     {
-        if (numbers.length == 0) return 0;
+        if (numbers.length == 0) {
+            return 0;
+        }
 
         double sum = 0;
         for (double num : numbers) {
@@ -42,24 +44,23 @@ class PracticeProgram {
     //complete this method that generates the squares 
     //of integers 0 to n
     public static int[] generateSquares(int n) {
-        
+
     }
 
     // Static method returning an ArrayList
     public static ArrayList<String> convertToUpper(String[] words) {
         // create a local ArrayList
-      
+
         for (String word : words) {
             result.add(word.toUpperCase());
         }
         //return the array list
-       
+
     }
 
     // ---------------- NON-STATIC METHODS ----------------
-
     // complete the method signature
-    public  displayMessage(String message) {
+    public displayMessage(String message) {
         System.out.println("Message: " + message);
     }
 
@@ -72,7 +73,7 @@ class PracticeProgram {
     // Instance method with array parameter
     //complete the method body to return the maximum number in numbers 
     public int findMax(int[] numbers) {
-       
+
     }
 
     // Instance method with ArrayList parameter
@@ -90,57 +91,47 @@ class PracticeProgram {
         return a * b;
     }
     //code the overloaded method that takes two double parameters and returns their product
-   
 
     // Method returning custom object (self)
     public PracticeProgram createNewInstance() {
         return new PracticeProgram();
     }
 }
-    // ---------------- MAIN METHOD ----------------
-    public class PracticeProgramICMain{
+// ---------------- MAIN METHOD ----------------
+
+public class PracticeProgramICMain {
+
     public static void main(String[] args) {
 
         // Using static methods
         //call the static method add with 5 and 10 as parameters
-        System.out.println("Sum: " + );
+        System.out.println("Sum: " +);
 
         //call the static method average with parameters 10, 20, 30, 40
-
-        System.out.println("Average: " + );
+        System.out.println("Average: " +);
 
         //generate the squares of numbers 0 to 5 and print them
-        
-
         String[] words = {"java", "advanced", "program"};
         //complete the call
-        = PracticeProgram.convertToUpper(words);
+         = PracticeProgram.convertToUpper(words);
         System.out.println("Uppercase List: " + upperWords);
 
         // Creating object for non-static methods
         PracticeProgram demo = new PracticeProgram();
 
         //call displayMessage with 'Welcome to the course'
-        
         //concatenate Hello and World and print Hello World 
-
-        
         int[] nums = {3, 7, 2, 9, 5};
-       //print the maximum of the numbers in nums
+        //print the maximum of the numbers in nums
 
         ArrayList<Integer> list = new ArrayList<>();
         //add the numbers 10, 20 and 30 to this array list
-       
-        //print the sum of these numbers now
-      
 
+        //print the sum of these numbers now
         // Method overloading demo
         //multiply 3 and 4 and print the result
         //multiply 2.5 and 3.5 and print the result
-        
-
         // create an object of type PracticeProgram
-       
         System.out.println("New Object Instance Counter: " + newObj.instanceCounter);
         //print the value of staticCounter
 

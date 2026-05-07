@@ -1,4 +1,4 @@
-package Wk1;
+package wk1;
 
 import java.util.Arrays;
 

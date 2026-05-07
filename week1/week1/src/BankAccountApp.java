@@ -1,5 +1,3 @@
-package wk1;
-
 import java.util.Arrays;
 
 class BankAccount {

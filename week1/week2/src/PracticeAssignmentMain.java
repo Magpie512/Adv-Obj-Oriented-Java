@@ -45,7 +45,7 @@ abstract class Vehicle implements FuelConsumer {
 class Car extends Vehicle {
     //add access specifier to this instance variable. Only available inside class code
     
-    final private int numberOfDoors;
+    private int numberOfDoors;
 
     public Car(String brand, String model, double fuelLevel, int numberOfDoors) {
         //appropriate initialization of the first 3 parameters
@@ -66,7 +66,7 @@ class Car extends Vehicle {
 class Motorcycle extends Vehicle {
     //make this variable 'visible' only in the class definition;add access specifier
 
-    final private boolean hasSidecar;
+    private boolean hasSidecar;
 
     public Motorcycle(String brand, String model, double fuelLevel, boolean hasSidecar) {
         //appropriate initialization of the first 3 parameters

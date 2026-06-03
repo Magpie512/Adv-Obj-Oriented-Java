@@ -51,6 +51,8 @@ public class TimerExample {
                     // Simulate a possible error
                     String message = null;
 
+                    // String message = "Hello";
+
                     // Causes NullPointerException
                     System.out.println(
                             message.toUpperCase()
